@@ -25,15 +25,15 @@ async function checkWeather(city) {
     document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
 
     if (data.weather[0].main == "Clouds") {
-      weatherIcon.src = "clouds.png";
+      weatherIcon.src = "/images/clouds.png";
     } else if (data.weather[0].main == "Clear") {
-      weatherIcon.src = "clear.png";
+      weatherIcon.src = "/images/clear.png";
     } else if (data.weather[0].main == "Rain") {
-      weatherIcon.src = "rain.png";
+      weatherIcon.src = "/images/rain.png";
     } else if (data.weather[0].main == "Drizzle") {
-      weatherIcon.src = "drizzle.png";
+      weatherIcon.src = "/images/drizzle.png";
     } else if (data.weather[0].main == "Mist") {
-      weatherIcon.src = "mist.png";
+      weatherIcon.src = "/images/mist.png";
     }
 
     document.querySelector(".weather").style.display = "block";
@@ -46,7 +46,7 @@ searchBtn.addEventListener("click", () => {
   checkWeather(searchBox.value);
 });
 
-// एंटर की दबाने पर भी सर्च हो
+
 searchBox.addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
     checkWeather(searchBox.value);
