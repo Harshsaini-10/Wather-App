@@ -14,4 +14,4 @@ It fetches real-time weather data from the **OpenWeatherMap API**.
 - **API:**
 
 ## 🔗 Live Demo  
-[🌐 Click here to view](http://127.0.0.1:5500/weather.html)
+[🌐 Click here to view](https://harshsaini-10.github.io/Wather-App/)
